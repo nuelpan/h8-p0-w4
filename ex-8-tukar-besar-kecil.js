@@ -11,7 +11,11 @@ function tukarBesarKecil(kalimat) {
     // A has the lowest code in alphabet A-Za-z
     // but higher than other string like 0-9 and most special character
     // so comparing kalimat[i] < "A" will bypass other character beside A-Za-z ;)
-    if (kalimat[i] < "A") {
+    if (
+      kalimat[i] < "A" ||
+      (kalimat[i] > "Z" && kalimat[i] < "a") ||
+      kalimat[i] > "z"
+    ) {
       hasil += kalimat[i];
     }
 
