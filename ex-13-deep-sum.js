@@ -4,10 +4,10 @@ function deepSum(arr) {
   if (arr.length === 0) {
     return "No number";
   }
-  for (var wow = 0; wow < arr.length; wow++) {
-    for (var dalem = 0; dalem < arr[wow].length; dalem++) {
-      for (var bgt = 0; bgt < arr[wow][dalem].length; bgt++) {
-        hasil += arr[wow][dalem][bgt];
+  for (var i = 0; i < arr.length; i++) {
+    for (var j = 0; j < arr[i].length; j++) {
+      for (var k = 0; k < arr[i][j].length; k++) {
+        hasil += arr[i][j][k];
       }
     }
   }
