@@ -8,9 +8,7 @@ function tukarBesarKecil(kalimat) {
 
   for (var i = 0; i < kalimat.length; i++) {
     // in javascript all string are encoded using UTF-16
-    // A has the lowest code in alphabet A-Za-z
-    // but higher than other string like 0-9 and most special character
-    // so comparing kalimat[i] < "A" will bypass other character beside A-Za-z ;)
+    // so we can manually filter the str that not a-zA-z
     if (
       kalimat[i] < "A" ||
       (kalimat[i] > "Z" && kalimat[i] < "a") ||
